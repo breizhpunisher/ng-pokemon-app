@@ -1,16 +1,8 @@
-<h1>Liste de Pokémons</h1>
-
-<input 
-#input
-(keyup.enter)="selectPokemon(input.value)"
-type= "number"/>
-<p *ngIf="pokemonSelected"> 
-    vous avez selectionné le pokémon {{ pokemonSelected.name }}
-</p>
-<p *ngIf="!pokemonSelected"> 
-    Aucun pokémon trouvé pour le moment.
-</p>
-
-<p *ngFor="let pokemon of pokemonList">
-    {{pokemon.name}}
-</p>
+<nav>
+   <div class="nav-wrapper teal">
+    <a href="#" class="brand-logo center">
+        Pokédex
+    </a>
+   </div> 
+</nav>
+<router-outlet></router-outlet>
